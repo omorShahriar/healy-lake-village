@@ -11,7 +11,7 @@ export const LinkButton = ({
       href={to}
       target="_blank"
       rel="noreferrer"
-      className={` pt-3  px-12 text-xl  ${
+      className={` pt-3  px-12  md:text-xl text-[17px]  ${
         invert == false ? "border-white text-white" : "border-black text-black"
       } border-2 `}
     >

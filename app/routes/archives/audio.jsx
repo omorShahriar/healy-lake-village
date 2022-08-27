@@ -20,7 +20,7 @@ export async function loader({ request }) {
 
 const Audio = () => {
   const { audios } = useLoaderData();
-  console.log("this is client: ", audios);
+
   return (
     <div>
       <Container>

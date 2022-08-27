@@ -252,6 +252,7 @@
   right: 40%;
   left: auto;
 }
+
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23.105' height='40' viewBox='0 0 23.105 40'%3E%3Cpath id='Icon_ionic-ios-arrow-back' data-name='Icon ionic-ios-arrow-back' d='M18.216,26.188,33.507,11.065a2.826,2.826,0,0,0,0-4.037,2.922,2.922,0,0,0-4.091,0L12.092,24.164a2.832,2.832,0,0,0-.084,3.942L29.4,45.36a2.926,2.926,0,0,0,4.091,0,2.826,2.826,0,0,0,0-4.037Z' transform='translate(34.355 46.194) rotate(180)' fill='%23fff'/%3E%3C/svg%3E%0A");
@@ -688,4 +689,19 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 792px) {
+  .swiper {
+    padding-top: 156px;
+    padding-bottom: 100px;
+  }
+  .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    right: 20%;
+  }
+  .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    left: 20%;
+  }
 }

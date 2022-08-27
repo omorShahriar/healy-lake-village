@@ -9,7 +9,7 @@ export const links = () => {
 const Header = ({ title }) => {
   return (
     <div className="">
-      <h2 className="  text-6xl font-medium transition-all duration-300  ">
+      <h2 className="   lg:text-6xl text-[30px] font-medium transition-all duration-300  ">
         {title}
       </h2>
     </div>

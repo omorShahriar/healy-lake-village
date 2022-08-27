@@ -1,4 +1,4 @@
-name = "remix-cloudflare-workers"
+name = "healy-lake-village"
 
 workers_dev = true
 main = "./build/index.js"

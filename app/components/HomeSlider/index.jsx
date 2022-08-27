@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -11,13 +11,13 @@ export const links = () => {
 
 const Slide = ({ portrait, landscape }) => {
   return (
-    <div className="w-full h-[550px] relative ">
+    <div className="w-full md:h-[550px] h-[250px] relative ">
       <img
         className=" object-cover object-center "
         src={landscape.url}
         alt={landscape.name}
       />
-      <div className="absolute z-10 -top-1/2 right-9 h-96">
+      <div className="absolute z-10 -top-1/2 right-9 h-96 hidden md:block ">
         {" "}
         <img className=" " src={portrait.url} alt={portrait.url} />
       </div>
@@ -35,14 +35,15 @@ export const HomeSlider = ({ imageUrls }) => {
   }
 
   return (
-    <div>
+    <div className=" md:mx-auto mx-4  ">
       <Swiper
         pagination={{
           type: "fraction",
         }}
-        modules={[Pagination, Navigation, Autoplay]}
+        navigation
+        spaceBetween={16}
+        modules={[Pagination, Navigation]}
         className="mySwiper"
-        autoplay={{ delay: 2500, disableOnInteraction: false }}
       >
         {imageBlockArray.map((imgBlock, i) => {
           return (

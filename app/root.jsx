@@ -16,7 +16,7 @@ export function links() {
 
 export const meta = () => ({
   charset: "utf-8",
-  title: "DOT Lake Village",
+  title: "Healy Lake Village",
   viewport: "width=device-width,initial-scale=1",
 });
 
@@ -25,16 +25,15 @@ export default function App() {
     <html lang="en">
       <head>
         <Meta />
-
         <Links />
       </head>
 
       <body
-        className=" font-noto bg-dotOrange "
-        ondragstart="return false;"
-        ondrop="return false;"
-        oncontextmenu="return false;"
-        oncopy="return false;"
+        className=" font-noto bg-black text-white"
+        onDragStart={(e) => e.preventDefault()}
+        onDrop={(e) => e.preventDefault()}
+        onContextMenu={(e) => e.preventDefault()}
+        onCopy={(e) => e.preventDefault()}
       >
         <Layout>
           <Outlet />

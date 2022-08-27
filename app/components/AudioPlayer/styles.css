@@ -258,3 +258,12 @@
 .rhap_button-clear:focus:not(:focus-visible) {
   outline: 0;
 }
+
+@media only screen and (max-width: 792px) {
+  .rhap_container {
+    padding: 10px 16px;
+  }
+  .rhap_controls-section {
+    padding-bottom: 25px;
+  }
+}

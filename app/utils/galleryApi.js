@@ -6,7 +6,7 @@ export const getImages = async (column, limit, offset = 0) => {
     offset,
     sortBy: { column: "name", order: "asc" },
   });
-  console.log(data);
+
   if (data.length != 0) {
     const imagePaths = data.map((img) => `${column}/${img.name}`);
     const imageLinks = await supabase.storage

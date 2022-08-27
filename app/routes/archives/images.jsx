@@ -58,21 +58,21 @@ const Images = () => {
   }, [fetcher.data]);
 
   return (
-    <div className=" mt-10 ">
+    <div className=" lg:mt-10 ">
       <Container>
         <div className=" grid grid-cols-12 gap-x-4 ">
-          <div className=" col-span-7 px-12 flex flex-col gap-y-12">
+          <div className=" col-span-7 lg:px-12 pl-4 flex flex-col lg:gap-y-12 gap-y-4">
             {lColumn.map((image, i) => (
               <img src={image.url} alt={image.name} key={i} />
             ))}
           </div>
-          <div className=" col-span-5 pl-3 pr-11 mt-20 flex flex-col gap-y-12 ">
+          <div className=" col-span-5 lg:pl-3 lg:pr-11 pr-3 mt-20 flex flex-col lg:gap-y-12 gap-y-4 ">
             {rColumn.map((image, i) => (
               <img src={image.url} alt={image.name} key={i} />
             ))}
           </div>
         </div>
-        <div className="mt-40">
+        <div className="lg:mt-40 mt-16">
           <div className="flex items-center justify-center">
             {loadButton ? (
               <fetcher.Form method="get">
