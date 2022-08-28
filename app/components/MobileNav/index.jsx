@@ -75,7 +75,7 @@ const MobileNav = () => {
       <div className="h-full flex justify-between">
         <div className=" w-16 h-16  ">
           <RemixLink to="/">
-            <img alt="brand logo" src="/brand-logo.png" />
+            <img alt="brand logo" src="/brand-logo.webp" />
           </RemixLink>
         </div>
         <div className=" absolute z-20 top-12 right-8 ">

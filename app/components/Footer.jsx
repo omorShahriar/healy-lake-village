@@ -27,7 +27,7 @@ const Footer = () => {
       </section>
       <footer className=" py-16 ">
         <div className=" flex flex-col items-center">
-          <img src="/brand-logo.png" alt="logo" className=" w-20 mb-14" />
+          <img src="/brand-logo.webp" alt="logo" className=" w-20 mb-14" />
           <p className=" font-semibold text-xl mb-11 ">We are Mendas Cha’ag.</p>
           <p className=" mb-8 text-xl">600 University Ave., Suite 100</p>
           <div className=" text-xl flex flex-col items-center  md:flex-row md:justify-between gap-y-4 md:gap-y-0 mb-8 gap-x-9">
